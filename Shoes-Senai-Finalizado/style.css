@@ -312,6 +312,7 @@ article h1{
     border: none;
     border-radius: 8px;
     outline: none;
+    
 
 
 }
@@ -328,6 +329,7 @@ article h1{
     font-family: font-titulo-bold;
     font-size: 24px;
     border-radius: 8px;
+    margin-top: 30px;
     
 }
 .input-gradient{
