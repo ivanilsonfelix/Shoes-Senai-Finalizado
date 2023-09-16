@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'font-paragrafo-bold';
+    src: url(assets/fontes/inter/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'font-titulo';
+    src: url(assets/fontes/titiliumweb/TitilliumWeb-Bold.ttf);
+}
+
+/* reset da pagina  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* configuração genericas que vai fazer conteudo  */
+.container-grid {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* começando estilização do header */
+/* realizar scroll suave na minha pagina html */
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #4e53d4;
+    height: 90px;
+}
+
+/*header-fles é responsavel pela organização dos componentes do header */
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* remover a estilização que vem por padrao nos links da ul li  */
+.links-header ul li{
+    list-style-type: none; 
+    text-decoration: none;/*remove as bolinhas laterais*/
+}
+/* realiza a estilização dos links dentro da nossa header  */
+.links-header .nav-links a {
+    text-decoration: none;      /* realiza a remoção do sublinhado dos links */
+    color: white;
+    font-family: font-paragrafo-bold;
+    font-size: 20px;
+    letter-spacing: 1px;     /*realiza o espaçamento interno dos links*/
+
+}
+.links-header .nav-links a:hover{ /* efeito de quando passa o mause sobre os links o mesmo muda de cor para preto*/
+    color: black;
+    transition: 0.2s; /* tempo para realizar mudança de cor*/
+}
+.nav-links{  /*realiza oespaçamento dos links e deixa os mesmos na horizontal*/
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.input-search input{  /* realiza a estilização do input-search dentro do header declarando as fontes, bordas, largura e altura*/
+    width: 387px;
+    height: 41px;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+
+
+}
+.input-search{ /* realização da cor de fundo do input*/
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.nav-icons{ /*realiza oespaçamento dos icons e deixa os mesmos na horizontal*/
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+
+}
+/* main  */
+.banner{
+    background-image: url(assets/img/banner.png); /* Realizar a criação do banner de fund, utilizamos a imagem no css para realizar a estilização direta da imagem */
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+ .banner-flex{  /*realiza a estilização de todos os componentes dentro do banner */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.banner-info{ /* realizar a estilização dos componentes ddentro da div banner-info*/
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.banner-info h1{ /*realizando a estilização do titulo all-star*/
+    font-family: font-paragrafo-bold ;
+    font-size: 40px;
+    text-transform: uppercase;
+    
+
+}
+button{  /* realizando as estilizações do botão definindo altura, largura, borda e cursor alteração para todos os buttons dentro da minha página, pois nao definimos nenhuma classe para o botão*/
+    width: 185px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #4e53d4;
+
+
+}
+.border-gradient{ /*realizar a estilização da borda gradiente do botão*/
+    padding: 2px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
+    
+}
+.button-edit{  /*realizar a estilização da fonte do texto do botão*/
+    font-family: font-paragrafo-bold;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*vamos realizas estilização dos cards da mais*/
+.background-ofertas{
+    height: 900px;
+    background-color: #5bdbf5;
+    background-image: linear-gradient(219deg, rgba(91, 219, 245, 0.60) -0.58%, #5BDBF5 36.55%, #56A6E8 49.81%, #F5B945 70.71%);
+    background-position: center;
+    background-size: cover;
+
+}
+.tittle-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+}
+.background-ofertas .news-tittle{
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 1px;
+
+}
+.background-ofertas .news-paragrafo{
+    color: white;
+    font-family: font-paragrafo-bold;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+/* Realizar estilização dos cards */
+.news-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.card{
+    background-color: linear-gradient(229deg, #56A7E8 4.42%, #509DB0 55.05%, #A0AF9D 76.82%);
+    border-radius: 8px;
+    width: 300px;
+    height: 335px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+
+}
+.card:hover{
+    box-shadow: 15px 0px 35px;
+}
+.info-card{ /*realiza a estilização dentro dos cards*/
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px;
+
+}
+.info-card h2{ /*realiza a estilização do h2 dentro dos cards*/
+    font-family: font-titulo-bold;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 26px;
+
+}
+.info-card p{  /*realiza a estilização do p dentro dos cards*/
+    font-family:font-paragrafo-bold ;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+    
+} /*vamos começar as configurações footer, definindo a imagem de fundo do footer*/
+footer{
+    background-image: linear-gradient(289deg, #7BABC3 12.82%, #F6BA45 57.3%, #F6BA45 100%);
+    
+}
+.footer-flex{ /*usado para definir altura e largura e tbem utilizado para posicionar os elementos no footer-flex*/
+    height: 581px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+/*definir estilos dos titulos*/
+article h1{
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 35px;
+
+}
+.box-03 h4{ /*definindo padrao de texto do contatos*/
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.box-01{ /*realiza estilização do box-01, utilizando propriedades de alimentos e estilizando o paragrafo*/
+    width: 188PX;
+    height: 255PX;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: font-paragrado-bold;
+    font-size: 15px;
+  
+}
+.midia-box-footer{  /*realiza o espaçamento dos icons dentro da box-01*/
+    width: 188px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+
+}
+.box-02 ul{
+    height: 100px;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+.box-02 li a{
+    color: white;
+    text-decoration: none;
+    
+
+}
+.box-02 li a:hover{
+    transition: all 0.5s;
+    color: black;
+
+}
+.box-03 h4{ /*definindo padrao de texto do contatos*/
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.box-03 p{
+    color: black;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+
+}
+.input-gradient{
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #BAC 0%, #D9D9D9 77.98%);
+    border: 1px solid transparent;
+    
+}
+.box-04 .input-gradient input{
+    padding-left: 10px;
+    color: white;
+    background: transparent;
+    width: 200px;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    
+
+
+}
+.box-04 input::placeholder{
+    color: black;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+}
+.box-04 button{
+    height: 40px;
+    width: 200px;
+    background-color: #f5b945;
+    color: black;
+    font-family: font-titulo-bold;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-top: 30px;
+    
+}
+.input-gradient{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 46px;
+
+}
+.footer-bottom a{
+    align-self: flex-end;
+
+}
+.copyright{
+    color: black;
+    font-family: font-paragrafo-bold;
+    align-self: center;
+}
+
+    
+
