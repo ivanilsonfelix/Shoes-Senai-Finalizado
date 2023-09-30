@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'font-paragrafo-bold';
+    src: url(assets/fontes/inter/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'font-titulo';
+    src: url(assets/fontes/titiliumweb/TitilliumWeb-Bold.ttf);
+}
+/*realizar reset da pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #fffafa;
+    height: 92vh;
+}
+.titulo-forms{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.titulo-forms>h1{
+    font-family: font-titulo;
+    font-weight: 20px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.titulo-forms>p{
+    font-family: font-paragrafo;
+
+}
+.contorno-forms{
+    height: 60vh;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: font-paragrafo;
+    padding-left: 5px;
+    border: 2px solid purple;
+    border-radius: 8px;
+}
+.form-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+
+}
+.info-flex{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+
+
+}
